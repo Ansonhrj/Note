@@ -1,0 +1,35 @@
+
+
+
+
+
+
+############################################################
+####mysql-client on ubuntu
+	apt-get update
+	apt-get install mysql-client -y
+	Log on to the database
+		mysql -u aliyun_admin -p -h rm-2evu4r9x6wg090ui1.mysql.rds.aliyuncs.com -P3306
+	create table
+		use rds-test;  //db name
+		create table user(id int, name varchar(11));
+		insert into user values (1, 'labex'), (2, 'alibaba'), (3, 'test');
+####mysql on CentOS
+	install
+		sudo rpm -Uvh http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm
+		yum install mysql mysql-server mysql-libs mysql-server
+			//the first one  "mysql" should means install the client only
+
+####mysql 8 on windows
+	安装：https://www.cnblogs.com/reyinever/p/8551977.html
+	修改root密码， 
+		mysql 5.7
+			update mysql.user set authentication_string=password("12345") where user="root";
+		mqsql 8, mysql_native_password 表示密码是明文
+			ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345';
+	创建用户
+		create user dbanormal@localhost identified by 'QIAN05pi';
+		grant all privileges on debo.* to dbanormal@localhost;
+	CREATE DATABASE debo;
+	create table product(Id int, Name varchar(20),Manufactory varchar(20),Count int,Prize int);
+	insert into product values (1, 'DaDeng','SanYueTian',5,1200), (2, 'BiDeng','HongFa',50,200),(3, 'TongDeng','FoShan',40,20),(4, 'FengshanDeng','SenLinFeng',5,900);

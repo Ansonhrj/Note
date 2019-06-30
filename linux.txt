@@ -1,0 +1,31 @@
+
+############################################################
+####liunx 
+jdk
+	normal path
+		/usr/lib/jvm/java-1.8.0-openjdk-amd64
+	install jdk on linux
+		wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/12.0.1+12/69cfe15208a647278a19ef0990eea691/jdk-12.0.1_linux-x64_bin.tar.gz
+
+		tar zxvf jdk-12.0.1_linux-x64_bin.tar.gz -C /usr/
+
+		vi ~/.bashrc
+		export JAVA_HOME=/usr/jdk-12.0.1
+		export JRE_HOME=${JAVA_HOME}/jre
+		export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+		export PATH=${JAVA_HOME}/bin:$PATH
+
+		source ~/.bashrc
+
+port
+	netstat -ntulp | grep 80   //查看所有80端口使用情况
+	kill -9 PID  //传递给进程的信号是９，即强制、尽快终止进程
+
+CentOS,add jar to auto start/启动项
+	1 create bash file /root/AppStart.sh
+		cd /root/
+		nohup java -jar weixin-java-mp-demo-1.0.0-SNAPSHOT.jar >log/jarstart.log 2>&1 &
+	2 chmod +x /etc/rc.d/rc.local
+	chmod +x /root/AppStart.sh
+	3 add below to last line of /etc/rc.d/rc.local
+		/root/AppStart.sh

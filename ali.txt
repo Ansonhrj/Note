@@ -1,0 +1,81 @@
+wechat
+	AppID wx23bb34a1ff46582d
+	AppSecret
+		84375c5cd4e8914aaab72c9ab635f86d
+	token: BtRNjJbdJiMZ2s7W1kMMxbFZTDq5IXeT
+	AES key: z9YibLQq7W2w2fV59HcPimWOgvpObpI7z1gnwk8BEmv
+
+
+base esc,have 有无云监控插件去收集cpu，内存
+
+
+
+windows mysql	
+	user: 
+		root: pwd为Qi**pi
+		dbanormal，pwd为Qi**pi
+	启动：net start mysql
+	运行sql: \bin>mysql -u root -p
+	FLUSH PRIVILEGES;
+	
+rds
+	dbanormal Qi**pi
+	CREATE DATABASE debo;
+
+
+用户登录名称 AppServer@1183103047764296.onaliyun.com
+AccessKey ID LTAIB8NxUh6QkTit
+AccessKeySecret 0S43sgR84kf41LECVoQCGnmot0pGCe
+OSS
+	AccessKey详情
+	AccessKeyID：
+	LTAI9szpDacjcEot
+	AccessKeySecret：
+	m9H4ynuKI6sUvXtGCTKja6aangORlT
+
+
+
+用户登录名称 AdminAnson@1183103047764296.onaliyun.com
+登录密码 Cn
+AccessKey ID LTAIVzkZQXbtlIpx
+AccessKeySecret VajpydxkSbVN8E1Zk2kg0Y9dYLMtfk
+AccessKey ID LTAIVzkZQXbtlIpx
+AccessKeySecret VajpydxkSbVN8E1Zk2kg0Y9dYLMtfk
+
+
+
+
+
+
+############################################################
+####alicloud Security
+security group:
+	ecs in the same group could access each other
+		need to use intra net ip
+	2 diff group, 
+		could add rule to allow group A to access group B
+		need to use intra net ip
+
+############################################################
+####alicloud RDS
+	ECS to access RDS
+		need to be the same network tpye.  RDS by default is classical network, need to update to VPC is ECS is VPC. and in the same VPC  
+		
+
+	
+	
+	
+RAM
+	用户登录名称 DBATom@1183103047764296.onaliyun.com
+	登录密码 Cn
+	AccessKey ID LTAIdrlsf6PnBO99
+	AccessKeySecret E3SSy02g7lgVpGc1CIWzsSvFMSQUy6
+	AccessKey ID LTAIdrlsf6PnBO99
+	AccessKeySecret E3SSy02g7lgVpGc1CIWzsSvFMSQUy6
+
+	用户登录名称 DevJack@1183103047764296.onaliyun.com
+	登录密码 Cn
+	AccessKey ID LTAIioiP9lCksSMb
+	AccessKeySecret JXfJHfTQQB3gyqSAhRkE1SwROWRQtq
+	AccessKey ID LTAIioiP9lCksSMb
+	AccessKeySecret JXfJHfTQQB3gyqSAhRkE1SwROWRQtq

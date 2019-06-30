@@ -1,0 +1,35 @@
+
+restcontroller/spring mvc to http request
+		 public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name,HttpServletRequest request) 
+	
+resttemplate and bean
+		@Bean innotation means the methold return a bean
+			@Bean(name = "customRestTemplate")
+			public RestTemplate customRestTemplate() {
+				SimpleClientHttpRequestFactory requestFactory = new SimpleClientHttpRequestFactory();
+				requestFactory.setConnectTimeout(5 * 1000);
+				requestFactory.setReadTimeout(5 * 1000);
+				return new RestTemplate(requestFactory);
+			}
+		to use the bean in springboot without applicationcontext
+			@Autowired
+			RestTemplate customRestTemplate;
+
+
+
+			
+############################################################
+####Elipse
+############################################################
+	为方法返回值自动定义变量
+		ctrl和2同时按完以后释放，再快速按L
+	sysout, system.out.print的模板
+		
+
+############################################################
+####springboot
+############################################################
+	put to below path will be included in Jar
+		\src\main\resources\config\application.properties
+	set port on run
+		java -jar xxx.jar --server.port=80	
