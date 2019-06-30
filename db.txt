@@ -1,7 +1,20 @@
-
-
-
-
+windows mysql	
+	user: 
+		root: pwd为Qi**pi
+		dbanormal，pwd为Qi**pi
+	启动：net start mysql
+	运行sql: \bin>mysql -u root -p
+	FLUSH PRIVILEGES;
+	
+Mysql
+	show databases;  //显示database
+	show tables;
+	desc {table_name};
+	
+	
+Access Data
+	1 JPA
+	
 
 
 ############################################################

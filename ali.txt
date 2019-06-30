@@ -10,13 +10,7 @@ base esc,have 有无云监控插件去收集cpu，内存
 
 
 
-windows mysql	
-	user: 
-		root: pwd为Qi**pi
-		dbanormal，pwd为Qi**pi
-	启动：net start mysql
-	运行sql: \bin>mysql -u root -p
-	FLUSH PRIVILEGES;
+
 	
 rds
 	dbanormal Qi**pi
